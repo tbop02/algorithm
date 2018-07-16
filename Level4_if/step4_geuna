@@ -1,4 +1,4 @@
-/*for - 1. ½ÃÇè¼ºÀû */
+/*for - 1. ì‹œí—˜ì„±ì  */
 #include <stdio.h>
 int main(void)
 {
@@ -27,7 +27,7 @@ int main(void)
 }
 
 
-/* for -2. ¼¼¼ö */
+/* for -2. ì„¸ìˆ˜ */
 a,b,c = map(int,input('').split())
 
 if a > b:
@@ -38,7 +38,7 @@ if b > c:
     b,c=c,b
 print(b)
 
-/* for -3. xº¸´Ù ÀÛÀº¼ö */
+/* for -3. xë³´ë‹¤ ì‘ì€ìˆ˜ */
 #include <stdio.h>
 int main(void) {
 int n, x, a;
@@ -56,7 +56,7 @@ int n, x, a;
 return 0;
 }
 
-/* for-4. Æò±Õ */
+/* for-4. í‰ê·  */
 
 #include<stdio.h>
 
@@ -85,7 +85,7 @@ int main(void)
 return 0;
  }
 
-/* for-6. »çÀÌÅ¬ */
+/* for-6. ì‚¬ì´í´ */
 #include <stdio.h>
 int main(void){
     int num, i=-1, result, count=0;
