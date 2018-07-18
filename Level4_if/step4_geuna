@@ -1,0 +1,104 @@
+/*for - 1. 시험성적 */
+#include <stdio.h>
+int main(void)
+{
+        int score;
+
+        scanf("%d",&score);
+
+        if (score >= 90)
+        {
+        printf("A\n");
+        }
+        else if(score >= 80)
+        {
+        printf("B\n");
+        }
+        else if(score >= 70)
+        {
+        printf("C\n");
+        }
+        else if(score >= 60)
+        {
+        printf("D\n");
+        }
+        else {printf("F\n"); }
+        return 0;
+}
+
+
+/* for -2. 세수 */
+a,b,c = map(int,input('').split())
+
+if a > b:
+    a,b=b,a
+if a > c:
+    a,c=c,a
+if b > c:
+    b,c=c,b
+print(b)
+
+/* for -3. x보다 작은수 */
+#include <stdio.h>
+int main(void) {
+int n, x, a;
+
+        scanf("%d %d", &n, &x);
+        while(n--)
+        {
+        scanf("%d", &a);
+            
+        if (a<x){
+                 printf("%d ",a);
+                 }         
+        }
+       printf("\n");
+return 0;
+}
+
+/* for-4. 평균 */
+
+#include<stdio.h>
+
+int main(void)
+
+{  int n, i;
+   int a[1000]={0,};
+   int big=0;
+   double result=0.0;
+
+  scanf("%d",&n); 
+
+        for(i=0; i<=n;i++){
+        scanf("%d",&a[i]);
+ 
+
+        big<a[i]?(big=a[i]):big;
+        }
+
+        for(i=0;i<n;i++){
+        result += (double)a[i]/(double)big*100.0;
+        }
+
+        printf("%.2f",result/(double)n); 
+
+return 0;
+ }
+
+/* for-6. 사이클 */
+#include <stdio.h>
+int main(void){
+    int num, i=-1, result, count=0;
+    
+    scanf("%d", &num);
+    while(i!=num){
+        if(count==0)
+            i=num;
+        result = (i/10)+(i%10);
+        i = (i%10)*10+(result%10);
+        count++;
+    }
+    printf("%d",count);
+    return 0;
+}
+
