@@ -1,0 +1,104 @@
+셀프넘버
+#include <stdio.h>
+
+int main() {
+
+	int selfNum[10035] = {0,};
+	int g = 1,i;
+    
+	for(i=1; i<10000; i++){
+		if(i<10){
+			g = i + i;
+		}
+		if(i>=10 && i<100){
+			g = i + i/10 + i%10;
+		}
+		if(i>=100 && i<1000){
+			g = i + i/100 + (i/10)%10 + i%10;
+		}
+		if(i>=1000 && i<10000){
+			g = i + i/1000 + (i/100)%10 + (i/10)%10 + i%10;
+		}
+		selfNum[g] = 1;
+		g = 0; 
+	}
+	for(int i=1; i<10000; i++){
+		if(selfNum[i] == 0){
+			printf("%d\n", i);
+		}
+	}
+return 0;
+}
+
+한수
+# 등차수열 ( 한단계 전..)
+
+#include <stdio.h>
+
+void main()
+{
+	int a,b,i=0,sum=0;
+
+	scanf("%d%d",&a,&b);
+	i = a;
+
+	while(i<=100) 
+	{
+	sum += i;
+	i += b;
+	}
+
+	printf("a값 : %d b값 : %d 결과: %d\n",a,b,sum);
+}	
+
+
+# 제출문
+
+
+#include <stdio.h>
+#include <math.h> 
+main(x,h)
+{
+	int i,x;
+	rs=0;
+    scanf_s("%d",&x);  --visual studio 에선 가능~
+    -- scanf_s("%d",&x); -- 노트북리눅스에서 해볼것!
+    for ( i = 1 ; i <= x ; i ++)
+	{
+		int tem1=i;
+		int cnt = 1;
+		while (tem1 /= 10) cnt++;
+		
+		if(cnt==3)
+		{
+			int tem2 = 1;
+			int l, s, b ; -- ill  sip back 으로 생각
+			l =tem2 % 10;
+			s=(tem2/10)%10;
+			b=tem2/100;
+
+			if(abs(s-b)==abs(s-l))
+			{
+				rs++;
+				if ((b==l&&(b!=s || l!=s))) rs--;
+			}
+		}
+	else if
+		{
+			(count == 1 || count ==2 ) rs++;
+	}		}
+	}
+	print("%d",rs);
+	print("\n");
+}
+
+#
+Main.cc:3:5: error: expected constructor, destructor, or type conversion before ‘(’ token
+ main(x,h)
+
+
+#별찍기
+
+## 첫째 줄에 N이 주어진다. N은 항상 3*2^k 수이다. (3, 6, 12, 24, 48, ...) (k<=10)
+
+
