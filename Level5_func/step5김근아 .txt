@@ -1,4 +1,4 @@
-¼¿ÇÁ³Ñ¹ö
+ì…€í”„ë„˜ë²„
 #include <stdio.h>
 
 int main() {
@@ -30,8 +30,8 @@ int main() {
 return 0;
 }
 
-ÇÑ¼ö
-# µîÂ÷¼ö¿­ ( ÇÑ´Ü°è Àü..)
+í•œìˆ˜
+# ë“±ì°¨ìˆ˜ì—´ ( í•œë‹¨ê³„ ì „..)
 
 #include <stdio.h>
 
@@ -48,11 +48,11 @@ void main()
 	i += b;
 	}
 
-	printf("a°ª : %d b°ª : %d °á°ú: %d\n",a,b,sum);
+	printf("aê°’ : %d bê°’ : %d ê²°ê³¼: %d\n",a,b,sum);
 }	
 
 
-# Á¦Ãâ¹®
+# ì œì¶œë¬¸
 
 
 #include <stdio.h>
@@ -61,8 +61,8 @@ main(x,h)
 {
 	int i,x;
 	rs=0;
-    scanf_s("%d",&x);  --visual studio ¿¡¼± °¡´É~
-    -- scanf_s("%d",&x); -- ³ëÆ®ºÏ¸®´ª½º¿¡¼­ ÇØº¼°Í!
+    scanf_s("%d",&x);  --visual studio ì—ì„  ê°€ëŠ¥~
+    -- scanf_s("%d",&x); -- ë…¸íŠ¸ë¶ë¦¬ëˆ…ìŠ¤ì—ì„œ í•´ë³¼ê²ƒ!
     for ( i = 1 ; i <= x ; i ++)
 	{
 		int tem1=i;
@@ -72,7 +72,7 @@ main(x,h)
 		if(cnt==3)
 		{
 			int tem2 = 1;
-			int l, s, b ; -- ill  sip back À¸·Î »ı°¢
+			int l, s, b ; -- ill  sip back ìœ¼ë¡œ ìƒê°
 			l =tem2 % 10;
 			s=(tem2/10)%10;
 			b=tem2/100;
@@ -93,12 +93,12 @@ main(x,h)
 }
 
 #
-Main.cc:3:5: error: expected constructor, destructor, or type conversion before ¡®(¡¯ token
+Main.cc:3:5: error: expected constructor, destructor, or type conversion before â€˜(â€™ token
  main(x,h)
 
 
-#º°Âï±â
+#ë³„ì°ê¸°
 
-## Ã¹Â° ÁÙ¿¡ NÀÌ ÁÖ¾îÁø´Ù. NÀº Ç×»ó 3*2^k ¼öÀÌ´Ù. (3, 6, 12, 24, 48, ...) (k<=10)
+## ì²«ì§¸ ì¤„ì— Nì´ ì£¼ì–´ì§„ë‹¤. Nì€ í•­ìƒ 3*2^k ìˆ˜ì´ë‹¤. (3, 6, 12, 24, 48, ...) (k<=10)
 
 
