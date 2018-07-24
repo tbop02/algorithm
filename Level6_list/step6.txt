@@ -1,0 +1,81 @@
+step6.  1차원배열 ~~~~~~
+
+#1. 7단계와 같다.
+
+#2.  7단계 알파벳과 비슷 ㅋㅋ  
+
+#include <stdio.h>
+int main()
+{
+	char a,b;
+	int xx[255],i;
+
+	for(int i=0; i<=255; i++)
+		xxx[i]=0;
+	for(;~scanf("%c", &c);)
+		xxx[c]++;
+	for(j='a';j<='z';j++)
+		printf("%c %d",j,xxx[j]);
+	return 0;
+}
+
+#include <stdio.h>
+int main(){
+	int a, b, c;
+	int abc[10] = {0, };
+	int result = 1;
+
+	scanf("%d %d %d", &a, &b, &c);
+	result = a * b * c;
+	while(result > 0){
+		a = result % 10;
+		abc[a] += 1;
+		result /= 10;
+	}
+	for(int i = 0; i < 10; i++) {
+		printf("%d\n", abc[i]);
+	}
+}
+
+
+#음계
+#include<stdio.h>
+int a, tmp;
+int main(){
+	   int tmp, a;
+	for(int i = 0; i<8; i ++){
+	scanf("%d",&a);
+   	a=a+tmp;
+    }
+	if(a == 12345678){
+    	    printf("ascending");
+ 	                   }
+	    else if(a == 87654321){
+        	printf("descending");
+ 	                           }
+  	  else{
+        printf("mixed");
+            }
+}
+
+# ox 퀴즈
+
+
+
+
+
+#5. 상현이의 아이폰개발수업의 평균
+
+#include <stdio.h>
+int main(){    
+	int score[5] = {0, };
+	int i, sum = 0;
+		for(i = 0; i < 5; i++){        		
+		scanf("%d", &score[i]);        
+        		if(score[i] <= 40){
+                    		score[i] = 40;
+        				}        
+       		 sum += score[i];
+    }    
+    printf("%d", sum/5);
+}
